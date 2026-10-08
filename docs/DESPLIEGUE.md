@@ -22,10 +22,12 @@ Sites utiliza `.openai/hosting.json` con `static.directory: dist`. El código fu
 ## Cloudflare Pages
 
 1. Conectar el repositorio GitHub desde Workers & Pages → Pages → importar repositorio.
-2. Elegir Astro; comando `npm run build`; salida `dist`; Node.js 24.
-3. Definir `SITE_URL=https://nombre.pages.dev`, `BASE_PATH=/` y rama `main`.
+2. Elegir Astro; comando `npm run build:pages`; salida `dist`; Node.js 24; raíz del repositorio vacía (la carpeta local `web/` es la raíz remota).
+3. Definir `SITE_URL` con la URL HTTPS real asignada por Cloudflare, `BASE_PATH=/` y rama `main`. El primer build puede usar `CF_PAGES_URL` hasta conocer la URL estable.
 4. Desplegar y comprobar la URL entregada, HTTPS, rutas directas, PDF y filtros.
 5. Cada push a `main` genera la versión; mantener rollback y propiedad institucional.
+
+Guía completa: [Cloudflare Pages Free](CLOUDFLARE_PAGES.md). La configuración, generación de QR/sitemap y validación del paquete están preparadas. La publicación en una cuenta Cloudflare queda pendiente de conexión del propietario.
 
 No se necesita base de datos ni funciones. `_headers` se copia a `dist/`. No activar SSR.
 

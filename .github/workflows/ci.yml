@@ -18,3 +18,7 @@ jobs:
       - run: npm run check
       - run: npm test
       - run: npm run build
+      - name: Validar paquete Cloudflare Pages
+        env:
+          SITE_URL: https://asis-pages-ci.invalid
+        run: npm run build:pages

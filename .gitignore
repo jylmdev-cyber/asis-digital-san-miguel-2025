@@ -2,6 +2,7 @@ node_modules/
 dist/
 .astro/
 .sites-runtime/
+.wrangler/
 .env*
 !.env.example
 qa/

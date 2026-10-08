@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Nombre propuesto. Debe coincidir con el proyecto elegido en Cloudflare.
+  "name": "asis-digital-san-miguel-2025",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-07"
+}

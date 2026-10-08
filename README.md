@@ -29,6 +29,7 @@ Abra la dirección que imprima Astro. Para comprobar el navegador, instale Chrom
 - Aplicación funcional: `src/`, `public/`, `tests/`.
 - [Guía de actualización](docs/ACTUALIZACION.md) y [validación](docs/VALIDACION.md).
 - [Comparación de alojamiento y despliegue gratuito](docs/DESPLIEGUE.md).
+- [Configuración lista para Cloudflare Pages Free](docs/CLOUDFLARE_PAGES.md): `npm run build:pages`, salida `dist`, Node 24 y raíz del repositorio.
 - [Plan priorizado y alcance](docs/PLAN.md).
 
 ## Estructura

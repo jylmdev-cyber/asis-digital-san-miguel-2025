@@ -9,7 +9,11 @@
     "preview": "astro preview --host 127.0.0.1",
     "check": "astro check && tsc --noEmit",
     "test": "node --test tests/data.test.mjs",
-    "qa": "node scripts/browser-qa.mjs"
+    "qa": "node scripts/browser-qa.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "pages:validate": "node scripts/validate-pages.mjs",
+    "pages:dev": "wrangler pages dev dist --port 8788",
+    "pages:deploy": "npm run pages:validate && wrangler pages deploy dist"
   },
   "dependencies": {
     "@astrojs/react": "latest",
@@ -28,6 +32,13 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "qrcode": "^1.5.4",
-    "typescript": "latest"
+    "typescript": "latest",
+    "wrangler": "^4.148.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "overrides": {
+    "sharp": "^0.35.5"
   }
 }
