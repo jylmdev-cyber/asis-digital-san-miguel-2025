@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Observatory from '../components/Observatory';
+import {routes} from '../lib/data';
+export function getStaticPaths(){return routes.filter(r=>r.id!=='inicio').map(r=>({params:{section:r.id},props:{label:r.label}}));}
+const {section}=Astro.params;const {label}=Astro.props;
+---
+<Layout title={label+' | ASIS Digital San Miguel 2025'}><Observatory section={section} client:load/></Layout>

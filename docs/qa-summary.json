@@ -1,0 +1,47 @@
+{
+  "testedAt": "2026-10-08T00:56:05.177Z",
+  "base": "http://127.0.0.1:4323/",
+  "results": [
+    {
+      "route": "inicio",
+      "violations": []
+    },
+    {
+      "route": "territorio/",
+      "violations": []
+    },
+    {
+      "route": "demografia/",
+      "violations": []
+    },
+    {
+      "route": "epidemiologia/",
+      "violations": []
+    },
+    {
+      "route": "determinantes/",
+      "violations": []
+    },
+    {
+      "route": "servicios/",
+      "violations": []
+    },
+    {
+      "route": "prioridades/",
+      "violations": []
+    },
+    {
+      "route": "biblioteca/",
+      "violations": []
+    },
+    {
+      "route": "inicio-dark",
+      "violations": []
+    },
+    {
+      "route": "inicio-mobile",
+      "violations": []
+    }
+  ],
+  "errors": []
+}
